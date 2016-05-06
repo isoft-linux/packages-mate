@@ -50,7 +50,7 @@ BuildRequires:  unique-devel
 
 Requires:   gamin
 Requires:   filesystem
-Requires:   redhat-menus
+#Requires:   redhat-menus
 Requires:   gvfs
 
 # the main binary links against libcaja-extension.so

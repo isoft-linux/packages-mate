@@ -15,7 +15,7 @@
 Name:           mate-settings-daemon
 Version:        %{branch}.0
 %if 0%{?rel_build}
-Release:        1%{?dist}
+Release:        2%{?dist}
 %else
 Release:        0.2%{?git_rel}%{?dist}
 %endif
@@ -47,7 +47,7 @@ BuildRequires:  pulseaudio-libs-devel
 
 Requires:       libmatekbd%{?_isa} >= 0:1.6.1-1
 # needed for xrandr capplet
-Requires:       mate-control-center-filesystem
+#Requires:       mate-control-center-filesystem
 
 %description
 This package contains the daemon which is responsible for setting the
@@ -142,5 +142,6 @@ fi
 
 
 %changelog
-* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-1
+* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-2
 - 1.14.0
+- Remove mate-control-center-filesystem require temporarily.

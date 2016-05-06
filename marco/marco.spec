@@ -34,13 +34,14 @@ BuildRequires: gtk2-devel
 BuildRequires: libcanberra-devel
 BuildRequires: libgtop2-devel
 BuildRequires: libSM-devel
-BuildRequireS: libsoup-devel
+BuildRequires: libsoup-devel
 BuildRequires: libXdamage-devel
 BuildRequires: mate-common
 BuildRequires: zenity
 BuildRequires: startup-notification-devel
 BuildRequires: yelp-tools
-BuildRequireS: libXcomposite-devel
+BuildRequires: libXcomposite-devel
+BuildRequires: libcanberra-gtk2-devel
 
 Requires:      mate-desktop-libs
 Requires:      %{name}-libs%{?_isa} = %{version}-%{release}

@@ -35,11 +35,11 @@ Patch0:        caja_add-xfce-to-desktop-file.patch
 
 BuildRequires:  dbus-glib-devel
 BuildRequires:  desktop-file-utils
-BuildRequires:  exempi-devel
+#BuildRequires:  exempi-devel
 BuildRequires:  gobject-introspection-devel
 BuildRequires:  cairo-gobject-devel
 BuildRequires:  libexif-devel
-BuildRequires:  libselinux-devel
+#BuildRequires:  libselinux-devel
 BuildRequires:  libSM-devel
 BuildRequires:  libxml2-devel
 BuildRequires:  mate-common

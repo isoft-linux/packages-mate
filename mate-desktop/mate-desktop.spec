@@ -17,7 +17,7 @@ Name:           mate-desktop
 License:        GPLv2+ and LGPLv2+ and MIT
 Version:        %{branch}.0
 %if 0%{?rel_build}
-Release:        1%{?dist}
+Release:        2%{?dist}
 %else
 Release:        0.2%{?git_rel}%{?dist}
 %endif
@@ -41,7 +41,7 @@ BuildRequires:  cairo-gobject-devel
 BuildRequires:  unique-devel
 
 Requires: %{name}-libs%{?_isa} = %{version}-%{release}
-Requires: redhat-menus
+#Requires: redhat-menus
 Requires: pygtk2
 Requires: xdg-user-dirs-gtk
 Requires: mate-control-center-filesystem
@@ -174,5 +174,6 @@ fi
 
 
 %changelog
-* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-1
+* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-2
 - 1.14.0
+- Remove redhat-menus require.

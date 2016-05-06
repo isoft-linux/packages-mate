@@ -15,7 +15,7 @@
 Name:           mate-screensaver
 Version:        %{branch}.0
 %if 0%{?rel_build}
-Release:        1%{?dist}
+Release:        2%{?dist}
 %else
 Release:        0.3%{?git_rel}%{?dist}
 %endif
@@ -29,8 +29,8 @@ URL:            http://pub.mate-desktop.org
 # Source for snapshot-builds.
 %{!?rel_build:Source0:    http://git.mate-desktop.org/%{name}/snapshot/%{name}-%{commit}.tar.xz#/%{git_tar}}
 
-Requires:       redhat-menus
-Requires:       system-logos
+#Requires:       redhat-menus
+#Requires:       system-logos
 Requires:       gnome-keyring-pam
 
 BuildRequires:  dbus-glib-devel
@@ -151,5 +151,6 @@ fi
 
 
 %changelog
-* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-1
+* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-2
 - 1.14.0
+- Remove redhat-menus and system-logos requires.

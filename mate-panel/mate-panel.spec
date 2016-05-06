@@ -15,7 +15,7 @@
 Name:           mate-panel
 Version:        %{branch}.0
 %if 0%{?rel_build}
-Release:        3%{?dist}
+Release:        4%{?dist}
 %else
 Release:        0.3%{?git_rel}%{?dist}
 %endif
@@ -37,7 +37,7 @@ Requires:       mate-session-manager
 #Requires:       fortune-mod
 Requires:       hicolor-icon-theme
 # rhbz (#1007219)
-#Requires:       caja-schemas
+Requires:       caja-schemas
 
 BuildRequires:  dbus-glib-devel
 BuildRequires:  desktop-file-utils
@@ -167,7 +167,6 @@ update-desktop-database &> /dev/null || :
 
 
 %changelog
-* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-3
+* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-4
 - 1.14.0
-- Remove caja-schemas require temporarily.
 - Remove fortune-mod require temporarily.

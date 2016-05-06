@@ -17,7 +17,7 @@ Summary:        MATE Desktop session manager
 License:        GPLv2+
 Version:        %{branch}.0
 %if 0%{?rel_build}
-Release:        1%{?dist}
+Release:        2%{?dist}
 %else
 Release:        0.2%{?git_rel}%{?dist}
 %endif
@@ -41,7 +41,7 @@ BuildRequires:  libXtst-devel
 BuildRequires:  xorg-x11-xtrans-devel
 BuildRequires:  tcp_wrappers-devel
 
-Requires: system-logos
+#Requires: system-logos
 # Needed for mate-settings-daemon
 Requires: mate-control-center
 # we need an authentication agent in the session
@@ -122,5 +122,6 @@ fi
 %{_datadir}/xsessions/mate.desktop
 
 %changelog
-* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-1
+* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-2
 - 1.14.0
+- Remove system-logos require.

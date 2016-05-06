@@ -36,6 +36,7 @@ BuildRequires:  libnotify-devel
 BuildRequires:  libwnck3-devel
 BuildRequires:  mate-common
 BuildRequires:  mate-desktop-devel
+BuildRequires:  libcanberra-gtk3-devel
 
 Provides:       desktop-notification-daemon
 

@@ -17,7 +17,7 @@
 Name:           mate-themes
 Version:        %{rel_ver}
 %if 0%{?rel_build}
-Release:        1%{?dist}
+Release:        2%{?dist}
 %else
 Release:        0.2%{?git_rel}%{?dist}
 %endif
@@ -38,7 +38,7 @@ BuildRequires:  gdk-pixbuf2-devel
 
 Requires:       mate-icon-theme
 Requires:       gtk2-engines
-Requires:       gtk-murrine-engine
+#Requires:       gtk-murrine-engine
 
 %description
 MATE Desktop themes
@@ -108,5 +108,6 @@ done
 
 
 %changelog
-* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 3.20.6-1
+* Fri May 06 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 3.20.6-2
 - 3.20.6
+- Remove gtk-murrine-engine require.

@@ -52,6 +52,7 @@ BuildRequires:  mate-common
 BuildRequires:  mate-desktop-devel
 BuildRequires:  mate-menus-devel
 BuildRequires:  yelp-tools
+BuildRequires:  libcanberra-gtk2-devel
 
 %description
 MATE Desktop panel applets

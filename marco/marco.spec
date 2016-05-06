@@ -40,6 +40,7 @@ BuildRequires: mate-common
 BuildRequires: zenity
 BuildRequires: startup-notification-devel
 BuildRequires: yelp-tools
+BuildRequireS: libXcomposite-devel
 
 Requires:      mate-desktop-libs
 Requires:      %{name}-libs%{?_isa} = %{version}-%{release}

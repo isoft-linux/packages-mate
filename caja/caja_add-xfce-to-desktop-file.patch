@@ -1,0 +1,24 @@
+diff -upr caja-1.12.2-orig/data/caja-browser.desktop.in caja-1.12.2/data/caja-browser.desktop.in
+--- caja-1.12.2-orig/data/caja-browser.desktop.in	2015-12-23 14:07:37.000000000 +0100
++++ caja-1.12.2/data/caja-browser.desktop.in	2015-12-27 16:58:33.861692159 +0100
+@@ -10,7 +10,7 @@ StartupNotify=true
+ Type=Application
+ Categories=GTK;System;Utility;Core;
+ Keywords=files;browser;manager;MATE;
+-OnlyShowIn=MATE;
++OnlyShowIn=MATE;XFCE;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
+ X-MATE-Bugzilla-Component=general
+diff -upr caja-1.12.2-orig/data/caja-browser.desktop.in.in caja-1.12.2/data/caja-browser.desktop.in.in
+--- caja-1.12.2-orig/data/caja-browser.desktop.in.in	2015-07-16 09:11:15.000000000 +0200
++++ caja-1.12.2/data/caja-browser.desktop.in.in	2015-12-27 16:59:06.615020192 +0100
+@@ -10,7 +10,7 @@ StartupNotify=true
+ Type=Application
+ Categories=GTK;System;Utility;Core;
+ Keywords=files;browser;manager;MATE;
+-OnlyShowIn=MATE;
++OnlyShowIn=MATE;XFCE;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
+ X-MATE-Bugzilla-Component=general

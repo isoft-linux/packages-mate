@@ -36,6 +36,7 @@ BuildRequires:  startup-notification-devel
 BuildRequires:  unique-devel
 BuildRequires:  gobject-introspection-devel
 BuildRequires:  cairo-gobject-devel
+BuildRequires:  unique-devel
 
 Requires: %{name}-libs%{?_isa} = %{version}-%{release}
 Requires: redhat-menus

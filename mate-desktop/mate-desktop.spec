@@ -29,6 +29,8 @@ URL:            http://mate-desktop.org
 # Source for snapshot-builds.
 %{!?rel_build:Source0:    http://git.mate-desktop.org/%{name}/snapshot/%{name}-%{commit}.tar.xz#/%{git_tar}}
 
+Source1:        mate-mimeapps.list
+
 BuildRequires:  dconf-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  mate-common
@@ -112,6 +114,9 @@ desktop-file-install                                         \
         --delete-original                                    \
         --dir=%{buildroot}%{_datadir}/applications           \
 %{buildroot}%{_datadir}/applications/mate-color-select.desktop
+
+mkdir -p %{buildroot}%{_datadir}/applications
+install -m 644 %SOURCE1 %{buildroot}/%{_datadir}/applications/mate-mimeapps.list
 
 %find_lang %{name} --with-gnome --all-name
 

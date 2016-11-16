@@ -16,7 +16,7 @@ Name:        mate-user-guide
 Summary:     User Guide for MATE desktop
 Version:     %{branch}.0
 %if 0%{?rel_build}
-Release:     1%{?dist}
+Release:     2%{?dist}
 %else
 Release:     0.2%{?git_rel}%{?dist}
 %endif
@@ -71,5 +71,5 @@ $RPM_BUILD_ROOT%{_datadir}/applications/mate-user-guide.desktop
 
 
 %changelog
-* Wed Sep 21 2016 Wolfgang Ulbrich <chat-to-me@raveit.de> - 1.14.0-1
+* Wed Nov 16 2016 Leslie Zhai <xiang.zhai@i-soft.com.cn> - 1.14.0-2
 - update to 1.14.0 release
